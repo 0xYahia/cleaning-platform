@@ -83,7 +83,7 @@ export default async function ServiceDetailPage({
             className={`absolute inset-0 bg-gradient-to-${isAr ? "r" : "l"} from-[#0F6E56]/80 via-[#0F6E56]/40 to-transparent`}
           />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 w-full py-12">
+        {/* <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 w-full py-12">
           <div className="max-w-2xl bg-white/10 backdrop-blur-md p-6 sm:p-8 md:p-10 rounded-3xl border border-white/20">
             <span className="inline-block px-3 sm:px-4 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs sm:text-label-caps font-label-caps mb-4 sm:mb-6">
               {badge}
@@ -109,7 +109,7 @@ export default async function ServiceDetailPage({
               {t("common.bookNow")}
             </Link>
           </div>
-        </div>
+        </div> */}
       </section>
 
       <section className="py-xl max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-12">
@@ -184,10 +184,10 @@ export default async function ServiceDetailPage({
                 <span className="font-bold text-primary">{t("serviceDetail.guaranteeValue")}</span>
               </li>
             </ul>
-            <div className="bg-surface-container-low rounded-2xl p-6 mb-6">
+            {/* <div className="bg-surface-container-low rounded-2xl p-6 mb-6">
               <p className="text-sm text-outline mb-1">{t("common.startingAt")}</p>
               <p className="text-3xl font-bold text-primary">{priceLabel}</p>
-            </div>
+            </div> */}
             <Link
               href={localePath(locale, "/booking")}
               className="block text-center w-full bg-[#0F6E56] text-white py-4 rounded-xl font-bold shadow-md hover:opacity-95 active:scale-95 transition-all"

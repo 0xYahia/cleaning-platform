@@ -143,20 +143,20 @@ function LocalBusinessJsonLd({ locale }: { locale: string }) {
     knowsLanguage: ["ar", "en"],
     makesOffer: (isAr
       ? [
-          "تنظيف منازل", "تنظيف فلل", "تنظيف شقق", "تنظيف مساجد",
-          "تنظيف مكاتب", "تنظيف مستشفيات", "تنظيف مباني",
-          "تنظيف وتعقيم", "تعقيم منازل", "تنظيف خزانات", "عزل خزانات",
-          "مكافحة حشرات", "مكافحة الصراصير", "مكافحة النمل الأبيض",
-          "تنظيف مكيفات", "تنظيف مكيفات سبليت", "تنظيف مكيفات مركزية",
-          "تنظيف بعد البناء", "تنظيف عميق", "تنظيف واجهات زجاجية",
-        ]
+        "تنظيف منازل", "تنظيف فلل", "تنظيف شقق", "تنظيف مساجد",
+        "تنظيف مكاتب", "تنظيف مستشفيات", "تنظيف مباني",
+        "تنظيف وتعقيم", "تعقيم منازل", "تنظيف خزانات", "عزل خزانات",
+        "مكافحة حشرات", "مكافحة الصراصير", "مكافحة النمل الأبيض",
+        "تنظيف مكيفات", "تنظيف مكيفات سبليت", "تنظيف مكيفات مركزية",
+        "تنظيف بعد البناء", "تنظيف عميق", "تنظيف واجهات زجاجية",
+      ]
       : [
-          "House Cleaning", "Villa Cleaning", "Apartment Cleaning",
-          "Mosque Cleaning", "Office Cleaning", "Hospital Cleaning",
-          "Sanitization", "Water Tank Cleaning", "Tank Sealing",
-          "Pest Control", "AC Cleaning", "Deep Cleaning",
-          "Post-Construction Cleaning", "Glass Facade Cleaning",
-        ]
+        "House Cleaning", "Villa Cleaning", "Apartment Cleaning",
+        "Mosque Cleaning", "Office Cleaning", "Hospital Cleaning",
+        "Sanitization", "Water Tank Cleaning", "Tank Sealing",
+        "Pest Control", "AC Cleaning", "Deep Cleaning",
+        "Post-Construction Cleaning", "Glass Facade Cleaning",
+      ]
     ).map((name) => ({
       "@type": "Offer",
       itemOffered: { "@type": "Service", name },
@@ -206,7 +206,7 @@ export default async function LocaleLayout({
           <Footer />
           <WhatsAppFAB />
           <CallFAB />
-          <MailFAB />
+          {/* <MailFAB /> */}
         </NextIntlClientProvider>
       </body>
     </html>

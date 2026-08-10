@@ -55,11 +55,10 @@ export function Navigation() {
               <Link
                 key={link.to}
                 href={link.to}
-                className={`transition-colors font-body-md ${
-                  isActive(link.to)
+                className={`transition-colors font-body-md ${isActive(link.to)
                     ? "text-[#0F6E56] font-bold"
                     : "text-gray-600 hover:text-[#0F6E56]"
-                }`}
+                  }`}
               >
                 {link.label}
               </Link>
@@ -73,9 +72,9 @@ export function Navigation() {
           >
             {t("common.switchLang")}
           </Link>
-          <button className="text-gray-600 font-medium hidden lg:block">
+          {/* <button className="text-gray-600 font-medium hidden lg:block">
             {t("common.login")}
-          </button>
+          </button> */}
           <Link
             href={localePath(locale, "/booking")}
             className="bg-[#0F6E56] text-white px-3 sm:px-5 md:px-6 py-2 sm:py-2.5 rounded-full font-bold shadow-md hover:opacity-90 active-scale transition-all flex items-center gap-1.5 sm:gap-2 text-sm sm:text-base"
@@ -102,11 +101,10 @@ export function Navigation() {
               <Link
                 key={link.to}
                 href={link.to}
-                className={`px-3 py-3 rounded-lg transition-colors font-body-md ${
-                  isActive(link.to)
+                className={`px-3 py-3 rounded-lg transition-colors font-body-md ${isActive(link.to)
                     ? "bg-[#0F6E56]/10 text-[#0F6E56] font-bold"
                     : "text-gray-600 hover:bg-[#0F6E56]/5"
-                }`}
+                  }`}
               >
                 {link.label}
               </Link>

@@ -115,8 +115,8 @@ export const subscriptionPlans: SubscriptionPlan[] = [
 
 export const paymentOptions = [
   { id: "account", icon: "account_balance" },
-  { id: "tabby", icon: "splitscreen" },
-  { id: "tamara", icon: "view_week" },
+  // { id: "tabby", icon: "splitscreen" },
+  // { id: "tamara", icon: "view_week" },
 ] as const;
 
 export const loyaltyBenefitIcons = [

@@ -170,12 +170,12 @@ export default async function Home({
                   </p>
                   <div className="flex items-center justify-between border-t border-surface-variant/40 pt-4">
                     <div>
-                      <span className="block text-xs text-outline">{t("common.startingAt")}</span>
+                      {/* <span className="block text-xs text-outline">{t("common.startingAt")}</span>
                       <span className={`font-bold text-primary ${isWide ? "text-2xl" : "text-lg"}`}>
                         {isAr
                           ? `${service.startingPrice} ${t("common.currency")}`
                           : `${t("common.currency")} ${service.startingPrice}`}
-                      </span>
+                      </span> */}
                     </div>
                     <span className="flex items-center gap-2 text-primary font-bold group-hover:gap-3 transition-all">
                       {t("common.learnMore")}{" "}
