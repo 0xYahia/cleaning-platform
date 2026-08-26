@@ -6,15 +6,15 @@ export function PaymentSection() {
   const t = useTranslations();
   return (
     <section className="bg-surface-container-low py-xl">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-8 md:gap-lg items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-1 gap-8 md:gap-lg items-center">
         <div className="md:col-span-1">
           <h2 className="text-2xl sm:text-3xl md:text-display-md font-display-md text-primary mb-4">
             {t("payment.title")}
           </h2>
-          <p className="text-base sm:text-body-lg text-on-surface-variant">
+          <p className="text-base sm:text-body-lg text-on-surface-variant">s
             {t("payment.description")}
           </p>
-        </div>
+        </div> {/*
         <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-md">
           {paymentOptions.map((opt) => (
             <div
@@ -28,7 +28,7 @@ export function PaymentSection() {
               <p className="text-xs text-on-surface-variant">{t("payment.splitNoInterest")}</p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
